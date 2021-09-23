@@ -1,0 +1,11 @@
+<h2>This is Post-Detail Component!</h2>
+{{#link-to '/'}}<h1>Goto Main Component</h1>{{/link-to}}
+{{#each-in data.user as |key value|}}
+<h2>{{key}}: {{value}}</h2>
+{{/each-in}}
+<br>
+<br>
+{{#each data.posts as |post|}}
+<h3>{{post.title}}</h3>
+<p>{{post.body}}</p>
+{{/each}}

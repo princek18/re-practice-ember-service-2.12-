@@ -1,0 +1,4 @@
+<h1>This is Main Component!</h1>
+{{#each fetchedData.users as |one|}}
+{{#link-to 'detail' one.id}}<h1>{{one.name}}</h1>{{/link-to}}
+{{/each}}

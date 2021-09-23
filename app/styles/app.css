@@ -1,0 +1,25 @@
+*{
+  margin:0px;
+  text-align: center;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  background-color: black;
+  color: white;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  background-color: black;
+  color: white;
+  position: fixed;
+  top: 92vh;
+  width: 100%;
+}
