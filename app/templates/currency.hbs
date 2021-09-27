@@ -1,0 +1,16 @@
+<h1>This is Currency Page:</h1>
+{{#link-to '/'}}<h2>Goto Index Page:</h2>{{/link-to}}
+<input id="inp" style="text-align: left;" type="text" oninput={{action 'update'}} value={{currency}} placeholder="Enter amount">
+<br>
+<br>
+<select onchange={{action "setSelection" value="target.value"}}>
+  <option value="Choose" selected>-</option>
+  <option value="rupee">Rupee</option>
+  <option value="dollar">dollar</option>
+</select>
+<br>
+<br>
+<button onclick={{action 'toggle'}}>Convert</button>
+{{#if flag}}
+<h1>{{currency-converter currency type=this.type}}</h1>
+{{/if}}

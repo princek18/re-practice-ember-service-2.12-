@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('/');
   this.route('template1');
   this.route('detail', {path:'user/:id'});
+  this.route('currency');
 });
 
 export default Router;
